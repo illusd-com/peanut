@@ -7,6 +7,7 @@
 <meta name="description" content="PeanutSMP：一台自己寫核心的 Minecraft 生存服，Java 與基岩版都能連。">
 <meta name="page-type" content="software">
 <meta name="site-kind" content="gaming">
+<link rel="icon" href="logo.jpg" type="image/jpeg">
 <style>
   :root{
     --ink:#141210; --ink-2:#4a4540; --paper:#f4f1ea; --paper-2:#e9e4d8;
@@ -43,7 +44,9 @@
   .hero .wrap{position:relative;z-index:1}
   .hero .kicker{font-size:13px;font-weight:800;letter-spacing:.14em;color:var(--peanut-d);
     text-transform:uppercase;margin-bottom:18px}
-  .hero h1{font-size:clamp(40px,7vw,64px);font-weight:900;letter-spacing:-.03em;line-height:1.12}
+  .hero h1{font-size:clamp(40px,7vw,64px);font-weight:900;letter-spacing:-.03em;line-height:1.12;margin:0}
+  .hero-logo{width:min(380px,74vw);height:auto;display:block;margin:0 0 24px;mix-blend-mode:multiply;
+    border-radius:4px}
   .hero .launch{font-size:clamp(16px,2.4vw,19px);font-weight:600;margin-top:16px;max-width:44ch}
   .hero .launch b{background:var(--peanut);padding:0 6px;border-radius:4px}
   .hero-actions{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap}
@@ -177,7 +180,7 @@
 <header class="hero" id="top">
   <div class="wrap">
     <div class="kicker">Paper 生存伺服器 · 自 2026 年 10 月營運</div>
-    <h1>花生生存服</h1>
+    <h1><img class="hero-logo" src="logo.jpg" alt="PeanutSMP 花生生存服" width="380" height="380"></h1>
     <p class="launch">
       一台由管理員自己寫核心的生存服。Java、手機、主機同一個世界，
       領地、拍賣行、連鎖挖礦都在裡面 —— <b>不用裝模組</b>，進來就能玩。
