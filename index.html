@@ -26,8 +26,8 @@
     border-bottom:2px solid var(--ink)}
   .nav-in{display:flex;align-items:center;gap:24px;height:62px}
   .brand{font-weight:900;font-size:18px;letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
-  .brand span{width:30px;height:30px;border-radius:50%;background:var(--peanut);
-    display:inline-flex;align-items:center;justify-content:center;font-size:16px;border:2px solid var(--ink)}
+  .brand .mark{width:30px;height:30px;border-radius:50%;object-fit:cover;object-position:center 22%;
+    border:2px solid var(--ink);background:var(--paper);flex-shrink:0}
   .nav-links{display:flex;gap:22px;margin-left:auto;font-size:14px;font-weight:600}
   .nav-links a{padding:4px 2px;border-bottom:2px solid transparent}
   .nav-links a:hover{border-bottom-color:var(--ink)}
@@ -45,7 +45,7 @@
   .hero .kicker{font-size:13px;font-weight:800;letter-spacing:.14em;color:var(--peanut-d);
     text-transform:uppercase;margin-bottom:18px}
   .hero h1{font-size:clamp(40px,7vw,64px);font-weight:900;letter-spacing:-.03em;line-height:1.12;margin:0}
-  .hero-logo{width:min(380px,74vw);height:auto;display:block;margin:0 0 24px;mix-blend-mode:multiply;
+  .hero-logo{width:min(240px,50vw);height:auto;display:block;margin:0 0 22px;mix-blend-mode:multiply;
     border-radius:4px}
   .hero .launch{font-size:clamp(16px,2.4vw,19px);font-weight:600;margin-top:16px;max-width:44ch}
   .hero .launch b{background:var(--peanut);padding:0 6px;border-radius:4px}
@@ -146,8 +146,8 @@
   @media(max-width:700px){.foot-grid{grid-template-columns:1fr}}
   footer h4{color:var(--paper);font-size:14px;margin-bottom:14px}
   footer .fbrand{display:flex;align-items:center;gap:10px;color:var(--paper);font-weight:900;font-size:18px}
-  footer .fbrand span{width:34px;height:34px;border-radius:50%;background:var(--peanut);
-    display:inline-flex;align-items:center;justify-content:center;border:2px solid var(--paper);font-size:17px}
+  footer .fbrand .mark{width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:center 22%;
+    border:2px solid var(--paper);background:var(--ink);flex-shrink:0}
   footer p{font-size:13.5px;margin-top:12px}
   footer .flinks{display:flex;flex-direction:column;gap:10px;font-size:14px;font-weight:600}
   footer .flinks a:hover{color:var(--paper)}
@@ -165,7 +165,7 @@
 
 <nav>
   <div class="wrap nav-in">
-    <a class="brand" href="#top"><span>🥜</span>PeanutSMP</a>
+    <a class="brand" href="#top"><img class="mark" src="logo.jpg" alt="PeanutSMP">PeanutSMP</a>
     <div class="nav-links">
       <a href="#join">連線</a>
       <a href="#features">特色</a>
@@ -180,7 +180,7 @@
 <header class="hero" id="top">
   <div class="wrap">
     <div class="kicker">Paper 生存伺服器 · 自 2026 年 10 月營運</div>
-    <h1><img class="hero-logo" src="logo.jpg" alt="PeanutSMP 花生生存服" width="380" height="380"></h1>
+    <h1><img class="hero-logo" src="logo.jpg" alt="PeanutSMP 花生生存服" width="240" height="240"></h1>
     <p class="launch">
       一台由管理員自己寫核心的生存服。Java、手機、主機同一個世界，
       領地、拍賣行、連鎖挖礦都在裡面 —— <b>不用裝模組</b>，進來就能玩。
@@ -332,7 +332,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="fbrand"><span>🥜</span>PeanutSMP</div>
+        <div class="fbrand"><img class="mark" src="logo.jpg" alt="PeanutSMP">PeanutSMP</div>
         <p>花生生存服。核心是管理員自己寫的 PeeSystem，跑在租來的專業主機上，不在臥房插座上。</p>
       </div>
       <div>
