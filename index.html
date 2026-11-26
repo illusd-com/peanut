@@ -205,18 +205,18 @@
         <h3>Java 版</h3>
         <div class="ver">Paper 26.3 · 埠 30462</div>
         <div class="addr">
-          <code>twm-1.swiftplay.cloud</code>
-          <button class="copy" data-copy="twm-1.swiftplay.cloud:30462">複製</button>
+          <code>mc.huhm.cc</code>
+          <button class="copy" data-copy="mc.huhm.cc">複製</button>
         </div>
         <div class="meta"><span>模式：<b>生存</b></span><span>難度：<b>困難</b></span><span>正版驗證：<b>開</b></span></div>
         <div class="note">用 Microsoft 帳號登入。第一次進來請打 /link 綁定 Discord 領身分組。</div>
       </div>
       <div class="ccard">
         <h3>基岩版</h3>
-        <div class="ver">iOS / Android / Win10 / 主機 · 埠 30462（UDP）</div>
+        <div class="ver">iOS / Android / Win10 / 主機 · 埠 30402</div>
         <div class="addr">
-          <code>twm-1.swiftplay.cloud</code>
-          <button class="copy" data-copy="twm-1.swiftplay.cloud:30462">複製</button>
+          <code>mc.huhm.cc</code>
+          <button class="copy" data-copy="mc.huhm.cc:30402">複製</button>
         </div>
         <div class="meta"><span>登入：<b>Xbox 帳號</b></span><span>不用 Java 帳號</span></div>
         <div class="note">經 Geyser + Floodgate 橋接。名字前面的「.」是橋接標記，不是錯誤。</div>
@@ -287,10 +287,10 @@
       <div class="step"><div class="no">1</div><h3>更新版本</h3>
         <p>Java 版更到 1.21.x；基岩版同樣 1.21.x。手機在主畫面按設定就能看版本。</p></div>
       <div class="step"><div class="no">2</div><h3>複製位址</h3>
-        <p>上面連線卡按「複製」，或照打 twm-1.swiftplay.cloud（埠 30462）。</p>
-        <div class="mock">twm-1.swiftplay.cloud</div></div>
+        <p>上面連線卡按「複製」，或照打 mc.huhm.cc（Java 埠 30462、基岩版埠 30402）。</p>
+        <div class="mock">mc.huhm.cc</div></div>
       <div class="step"><div class="no">3</div><h3>新增伺服器</h3>
-        <p>Java：多人遊戲 → 新增伺服器，位址填 twm-1.swiftplay.cloud:30462。基岩：遊戲 → 伺服器 → 新增，位址相同、埠 30462。</p></div>
+        <p>Java：多人遊戲 → 新增伺服器，位址填 mc.huhm.cc（埠 30462 自動解析）。基岩：遊戲 → 伺服器 → 新增，位址 mc.huhm.cc、埠 30402。</p></div>
       <div class="step"><div class="no">4</div><h3>綁 Discord</h3>
         <p>進來後打 /link，把給的六位數打到 Discord 的 /verify，身分組自動發。</p></div>
     </div>
@@ -357,9 +357,9 @@
 <div class="toast" id="toast">複製好了</div>
 
 <script>
-const HOST = "twm-1.swiftplay.cloud";
+const HOST = "mc.huhm.cc";
 const JAVA_API = "https://api.mcsrvstat.us/3/" + HOST;
-const BEDROCK_API = "https://api.mcsrvstat.us/bedrock/3/" + HOST + ":30462";
+const BEDROCK_API = "https://api.mcsrvstat.us/bedrock/3/" + HOST + ":30402";
 
 function toast(msg){
   const t = document.getElementById("toast");
